@@ -1,0 +1,27 @@
+INDEX VERSION 1.126
+D:\codes\java\ec\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\174361922.index
+\Servlet_JDBC\src
+D:\codes\java\ec\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1787542728.index
+\Redirect Servlet\src
+D:\codes\java\ec\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2612068807.index
+\Server with JDBC\src
+D:\codes\java\ec\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4178593865.index
+\MySQL_DataBase\src
+D:\codes\java\ec\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3141390418.index
+\Cookie\src
+D:\codes\java\ec\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3377122060.index
+\Redirect Servlet\src
+D:\codes\java\ec\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2125579140.index
+\Form Example\src
+D:\codes\java\ec\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3395651797.index
+\servlets\src
+D:\codes\java\ec\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\116951532.index
+\HttpSession\src
+D:\codes\java\ec\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\358639973.index
+\HttpSession\src
+D:\codes\java\ec\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\880812889.index
+\Form_servlet\src
+D:\codes\java\ec\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2072322786.index
+\Servlet_JDBC\src
+D:\codes\java\ec\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3421554545.index
+\CookieDemo\src

@@ -1,0 +1,27 @@
+package Series;
+import java.io.*;
+public class Fibonacci {
+	int start,end,temp;
+	public void getFibonacci(){
+		try{
+			BufferedReader hit = new BufferedReader(new InputStreamReader(System.in));
+			System.out.print("\t Enter Start number :- ");
+			start = Integer.parseInt(hit.readLine());
+			System.out.print("\t Enter End   number :- ");
+			end = Integer.parseInt(hit.readLine());
+			System.out.println("\n\t ");
+			System.out.print(" "+start+" "+(++start));
+			temp=start;
+			while(start <= end){
+				int temp1 = start+temp;
+				System.out.print(" "+temp1);
+				start = temp;
+				temp = temp1;
+			}
+		}catch(Exception e){
+			System.out.println(e);
+		}
+		
+	}
+
+}

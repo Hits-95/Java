@@ -1,0 +1,9 @@
+public class IfTest {
+	public static void main(String[] args){
+		int a=3;
+		if(!(a%2))
+			System.out.println(" Event");
+		else
+			System.out.println(" Odd");
+	}
+}

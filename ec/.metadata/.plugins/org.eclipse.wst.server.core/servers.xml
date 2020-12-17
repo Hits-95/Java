@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v7.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v7.0 Server at localhost" name="Tomcat v7.0 Server at localhost" runtime-id="Apache Tomcat v7.0" server-type="org.eclipse.jst.server.tomcat.70" server-type-id="org.eclipse.jst.server.tomcat.70" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="20">
+    <list key="modules" value0="Form_servlet::org.eclipse.jst.jee.server:Form_servlet::jst.web::2.5" value1="Redirect Servlet::org.eclipse.jst.jee.server:Redirect Servlet::jst.web::2.5" value2="Servlet_JDBC::org.eclipse.jst.jee.server:Servlet_JDBC::jst.web::2.5" value3="Cookie::org.eclipse.jst.jee.server:Cookie::jst.web::2.5" value4="HttpSession::org.eclipse.jst.jee.server:HttpSession::jst.web::2.5"/>
+  </server>
+</servers>

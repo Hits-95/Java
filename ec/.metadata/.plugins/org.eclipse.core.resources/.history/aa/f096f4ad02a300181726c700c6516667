@@ -1,0 +1,16 @@
+package Series;
+import java.io.*;
+public class Fibonacci {
+	int start,end;
+	public void getFibonacci(){
+		try{
+			BufferedReader hit = new BufferedReader(new InputStreamReader(System.in));
+			System.out.print("\t Enter start number :- ");
+			start = Integer.parseInt(hit.readLine());
+		}catch(Exception e){
+			System.out.println(e);
+		}
+		
+	}
+
+}

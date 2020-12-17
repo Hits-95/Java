@@ -1,0 +1,14 @@
+import Series.*;
+public class MainClass {
+
+	public static void main(String[] args) {
+		System.out.println("\t Wel Come.");
+		int num = Integer.parseInt(args[0]);
+		Square obj = new Square();
+		Prime obj1 = new Prime();
+		isprime(num);
+		getSquare(num);
+
+	}
+
+}

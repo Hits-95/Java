@@ -1,0 +1,11 @@
+127.0.0.1 - - [11/Jan/2019:08:49:41 +0530] "GET / HTTP/1.1" 404 1036
+0:0:0:0:0:0:0:1 - - [11/Jan/2019:08:49:44 +0530] "GET /Servlet_JDBC/ HTTP/1.1" 200 592
+0:0:0:0:0:0:0:1 - - [11/Jan/2019:08:49:50 +0530] "GET /Servlet_JDBC/register.jsp HTTP/1.1" 200 662
+0:0:0:0:0:0:0:1 - - [11/Jan/2019:08:50:06 +0530] "POST /Servlet_JDBC/Register HTTP/1.1" 200 379
+0:0:0:0:0:0:0:1 - - [11/Jan/2019:08:50:08 +0530] "GET /Servlet_JDBC/index.jsp HTTP/1.1" 200 592
+0:0:0:0:0:0:0:1 - - [11/Jan/2019:08:50:16 +0530] "POST /Servlet_JDBC/Login HTTP/1.1" 200 466
+0:0:0:0:0:0:0:1 - - [11/Jan/2019:08:50:20 +0530] "GET /Servlet_JDBC/insert.jsp HTTP/1.1" 200 905
+0:0:0:0:0:0:0:1 - - [11/Jan/2019:08:50:28 +0530] "POST /Servlet_JDBC/Insert HTTP/1.1" 200 421
+0:0:0:0:0:0:0:1 - - [11/Jan/2019:08:50:33 +0530] "GET /Servlet_JDBC/Opration.jsp HTTP/1.1" 200 464
+0:0:0:0:0:0:0:1 - - [11/Jan/2019:08:50:36 +0530] "GET /Servlet_JDBC/select.jsp HTTP/1.1" 200 437
+0:0:0:0:0:0:0:1 - - [11/Jan/2019:08:50:39 +0530] "POST /Servlet_JDBC/Select HTTP/1.1" 200 368

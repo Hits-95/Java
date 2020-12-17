@@ -1,0 +1,9 @@
+package Series;
+
+public class Fibonacci {
+	int start,end;
+	public void getFibonacci(){
+		System.out.print("\t Enter start number :- ");
+	}
+
+}

@@ -1,0 +1,81 @@
+/**
+ *  SET A (1,2)
+ */
+
+import java.util.*;
+public class Student_2 {
+	static int roll,OBJcounter;
+	String name;
+	float per;
+	int r;
+	
+	Scanner hit = new Scanner(System.in);
+	Student_2(){
+		r = ++roll;
+		++OBJcounter;
+		
+		System.out.print("\t Enter Roll No    :- "+roll);
+		System.out.println();
+	}
+	Student_2(String name){
+		this.name = name;
+		this.r = roll;
+		System.out.print("\t Enter Percentage :- ");
+		per = hit.nextFloat();
+	}
+	
+	public static void sortStudent(Student_2[] arr){
+		Student_2 temp;
+		
+		for(int i=1; i<arr.length; i++)
+			for(int j=0; j<arr.length - i; j++)
+				if(arr[j].per < arr[j+1].per){
+					temp = arr[j];
+					arr[j] = arr[j+1];
+					arr[j+1] = temp;
+				}
+	}
+	
+	public static void display(){
+		System.out.println("\t\t ~~~~ >>> Object Information <<< ~~~~");
+		System.out.print("\t Total Objects Are = "+OBJcounter);
+		System.out.println("\n");
+	}
+	public void displyObj(){
+		System.out.println("\t Roll No    = "+r);
+		System.out.println("\t Name       = "+name);
+		System.out.println("\t percentage = "+per);
+		System.out.println("\t    ~~~*~~~");
+	}
+	
+	public static void main(String[] args){
+		try{
+			Scanner hit = new Scanner(System.in);
+			
+			System.out.print("\t Enter How Many Objects To Create :- ");
+			byte sz = hit.nextByte();
+			
+			Student_2[] obj = new Student_2[sz];
+			for(int i=0; i<obj.length; i++){
+				obj[i] = new Student_2();   //..IMP
+				System.out.print("\t Enter Name :- ");
+				String name = hit.next();
+				obj[i] = new Student_2(name);         //....IMP
+				System.out.println("\t ~~~ Racord Saved ~~~ \n");
+			}
+			display();
+			System.out.println("\t\t ~~~ >>> Unsorted Racord <<< ~~~ ");
+			for(int i=0; i<obj.length; i++)
+				obj[i].displyObj();
+			
+			sortStudent(obj);	
+			
+			System.out.println("\t\t ~~~ >>> Sorted Racord <<< ~~~ ");
+			for(int i=0; i<obj.length; i++)
+				obj[i].displyObj();
+			
+		}catch(Exception e){
+			System.out.println(e);
+		}
+	}
+}
