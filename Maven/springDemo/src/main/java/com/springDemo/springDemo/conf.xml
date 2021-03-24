@@ -14,11 +14,21 @@
 			<value>01</value>
 		</property>
 		<property name="name">
-			<value> Hitesh</value>
+			<value> Hitesh Ahire</value>
 		</property>
 		<property name="addr">
-			<value> Dabli</value>
+			<value> At Dabli</value>
 		</property>
-
+	</bean>
+	<bean class="com.springDemo.springDemo.Student" name="Student2">
+		<property name="rollno">
+			<value>02</value>
+		</property>
+		<property name="name">
+			<value> Nikita Morankr</value>
+		</property>
+		<property name="addr">
+			<value> At Pachora</value>
+		</property>
 	</bean>
 </beans>
