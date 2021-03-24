@@ -20,15 +20,10 @@
 			<value> At Dabli</value>
 		</property>
 	</bean>
+	
 	<bean class="com.springDemo.springDemo.Student" name="Student2">
-		<property name="rollno">
-			<value>02</value>
-		</property>
-		<property name="name">
-			<value> Nikita Morankr</value>
-		</property>
-		<property name="addr">
-			<value> At Pachora</value>
-		</property>
+		<property name="rollno" value="02"/>
+		<property name="name" value="Nikita "/>
+		<property name="addr" value="Pachora"/>
 	</bean>
 </beans>
