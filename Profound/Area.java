@@ -1,6 +1,11 @@
 import java.util.Scanner;
 
+class Temp{
+     static int a = 1;
+}
+
 public class Area{
+   
     //Triangle
     public int area(int base, int height){
         return base * height * 1 / 2;
@@ -28,5 +33,11 @@ public class Area{
         System.out.println("Area of Rectangle : " + area.area(2.5f, 5.4f) );
         System.out.println("Area of Squre     : " + area.area(4));
         System.out.println("Area of Circle    : " + area.area(2.5f));
+
+        
+        Temp a = new Temp();
+        System.out.println(a.a++);
+        Temp b = new Temp();
+        System.out.println(b.a);
     }
 }
