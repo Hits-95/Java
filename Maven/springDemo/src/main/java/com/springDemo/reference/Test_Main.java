@@ -6,6 +6,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class Test_Main {
 
 	public static void main(String[] args) {
+		@SuppressWarnings("resource")
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/springDemo/reference/Data_congf.xml");
 		A A_obj = (A) context.getBean("A_ref");
 		System.out.println(A_obj.getX());
@@ -14,5 +15,4 @@ public class Test_Main {
 		System.out.println("object B :  " + A_obj.getObj());
 
 	}
-
 }
