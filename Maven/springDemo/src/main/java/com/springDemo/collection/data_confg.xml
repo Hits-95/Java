@@ -12,6 +12,7 @@
 	<!-- type 1 -->
 	<bean class="com.springDemo.collection.Employee" name="Emp1">
 		<property name="name" value="Hitesh" />
+		
 		<property name="phones">
 			<list>
 				<value> 123456789 </value>
