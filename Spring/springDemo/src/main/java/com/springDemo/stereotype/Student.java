@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-//default variable is 'student ' but u can change it as temp
+//default object-name is 'student ' but u can change it as temp
 
 //Singleton , Prototype
 @Scope("prototype")
