@@ -11,8 +11,13 @@
 	
 	<context:annotation-config />
 	
-	<bean class="com.springDemo.auto.wire.annotation.Address" name="address">
+	<bean class="com.springDemo.auto.wire.annotation.Address" name="address1">
 		<property name="street" value="temp data put into sreet" />
+		<property name="city" value="pune" />
+	</bean>
+	
+	<bean class="com.springDemo.auto.wire.annotation.Address" name="address2">
+		<property name="street" value="ganfapur road nashik " />
 		<property name="city" value="Nashik" />
 	</bean>
 
