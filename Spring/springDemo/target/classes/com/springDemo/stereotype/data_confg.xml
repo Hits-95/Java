@@ -21,4 +21,6 @@
 		<value> Dabli </value>
 		<value> Vadel </value>
 	</util:list>
+	
+	<bean class="com.springDemo.stereotype.Tea" name="tea" scope="prototype"></bean>
 </beans>

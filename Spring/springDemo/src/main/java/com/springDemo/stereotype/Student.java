@@ -3,9 +3,13 @@ package com.springDemo.stereotype;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 //default variable is 'student ' but u can change it as temp
+
+//Singleton , Prototype
+@Scope("prototype")
 @Component("temp")
 public class Student {
 	@Value("Hitesh Bhagwan Ahire")
