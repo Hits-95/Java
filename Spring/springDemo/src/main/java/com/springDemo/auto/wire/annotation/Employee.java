@@ -1,6 +1,9 @@
-package com.springDemo.auto.wire;
+package com.springDemo.auto.wire.annotation;
+
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class Employee {
+	@Autowired
 	private Address address;
 
 	public Employee() {

@@ -1,4 +1,4 @@
-package com.springDemo.auto.wire;
+package com.springDemo.auto.wire.annotation;
 
 public class Address {
 	private String street;
