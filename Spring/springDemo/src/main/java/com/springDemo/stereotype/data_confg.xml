@@ -11,5 +11,14 @@
  	http://www.springframework.org/schema/util
  	http://www.springframework.org/schema/util/spring-util.xsd">
 
-	<context:component-scan base-package="com.springDemo.stereotype"/>
+	<context:component-scan
+		base-package="com.springDemo.stereotype" />
+		
+	<!-- java.util.ArrayList -->
+	<util:list list-class="java.util.Vector" id="dataset">
+		<value> Nashik </value>
+		<value> Malegaon </value>
+		<value> Dabli </value>
+		<value> Vadel </value>
+	</util:list>
 </beans>
