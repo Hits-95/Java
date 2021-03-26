@@ -16,6 +16,9 @@ public class Test_Main {
 		System.out.println("++++++++++++++");
 		Pepsi pepsi1 = (Pepsi) context.getBean("pepsi1");
 		System.out.println(pepsi1);
+		System.out.println("++++++++++++++");
+		Example exam = (Example) context.getBean("exam");
+		System.out.println(exam);
 	}
 
 }
