@@ -12,21 +12,24 @@ public class Demo {
 	@Value("#{ 10 > 5 ? 11 : 44 }")
 	private int y;
 
-	// calling method..
+	// calling static method..
 	@Value("#{ T(java.lang.Math).sqrt(144) }")
 	private double z;
 
-	// calling variable value
+	// calling static variable value
 	@Value("#{ T(java.lang.Math).E }")
 	private double e;
 
-	// calling variable value
+	// calling static variable value
 	@Value("#{T(java.lang.Math).PI}")
 	private double pi;
 
 	// creating object and call its constructer
 	@Value("#{ new java.lang.String('Hitesh Ahire') }")
 	private String name;
+
+	@Value("#{ 4>3 }")
+	private boolean isActive;
 
 	public int getX() {
 		return x;
@@ -78,7 +81,8 @@ public class Demo {
 
 	@Override
 	public String toString() {
-		return "Demo [x=" + x + ", y=" + y + ", z=" + z + ", e=" + e + ", pi=" + pi + ", name=" + name + "]";
+		return "Demo [x=" + x + ", y=" + y + ", z=" + z + ", e=" + e + ", pi=" + pi + ", name=" + name + ", isActive="
+				+ isActive + "]";
 	}
 
 }
