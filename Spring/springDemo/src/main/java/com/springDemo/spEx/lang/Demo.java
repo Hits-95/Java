@@ -28,6 +28,7 @@ public class Demo {
 	@Value("#{ new java.lang.String('Hitesh Ahire') }")
 	private String name;
 
+	//assine a boolean value 
 	@Value("#{ 4>3 }")
 	private boolean isActive;
 
