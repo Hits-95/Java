@@ -19,7 +19,6 @@
 	<!-- use referance variable -->
 	<bean class="com.springDemo.Constructor_Injection.Person"
 		name="person" c:pid="92" c:name="Hitesh Ahire" c:cert-ref="cert">
-
 		<constructor-arg>
 			<list>
 				<value> Hitesh </value>
