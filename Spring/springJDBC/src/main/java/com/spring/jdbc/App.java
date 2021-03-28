@@ -1,6 +1,9 @@
 package com.spring.jdbc;
 
+import java.util.List;
+
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.spring.jdbc.dao.StudentDao;
@@ -9,17 +12,22 @@ import com.spring.jdbc.entites.Student;
 public class App {
 
 	public static void main(String[] args) {
-
-		ApplicationContext context = new ClassPathXmlApplicationContext("com/spring/jdbc/data_confg.xml");
 		
+		//using XML
+		//ApplicationContext context = new ClassPathXmlApplicationContext("com/spring/jdbc/data_confg.xml");
+		
+		ApplicationContext context = new AnnotationConfigApplicationContext(JdbcConfig.class);
 		//get query fire object
 		StudentDao studentDao = context.getBean("studentDao", StudentDao.class);
 		
 		//get data for insert
-		//Student student  = context.getBean("student1", Student.class);
 		
-		//fire 
-		//int result = studentDao.insert(student);
+		/*
+		 * Student student = context.getBean("student1", Student.class);
+		 * 
+		 * int insert = studentDao.insert(student);
+		 * System.out.println("no of data insert : " + insert);
+		 */ 
 		
 		//update Student
 		/*
@@ -32,9 +40,24 @@ public class App {
 		 */
 		
 		//Delete Student
-		int delete = studentDao.delete(6);
-		System.out.println("No of record deleted : " + delete);
+		/*
+		 * int delete = studentDao.delete(6);
+		 * System.out.println("No of record deleted : " + delete);
+		 */
+		
+		//Select opration 
+		//get single student data
+		/*
+		 * Student student = studentDao.getStudent(1);
+		 * System.out.println("Single Student data : " + student);
+		 */
+		
+		//list of student
+		List<Student> allStudents = studentDao.getAllStudents();
+		System.out.println("All students \n--------------------------------------------------------");
 
+		for(Student stud : allStudents)
+			System.out.println(stud);
 	}
 }
 

@@ -5,7 +5,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ComponentScan(basePackages = "com.springDemo.removeXML") // its optionali while get obj using method getStudent() but
+@ComponentScan(basePackages = "com.springDemo.removeXML") // its optional while get obj using method getStudent() but
 															// must in without method
 public class JavaConfig {
 

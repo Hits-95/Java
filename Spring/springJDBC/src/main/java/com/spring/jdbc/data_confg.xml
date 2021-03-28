@@ -35,9 +35,9 @@
 
 	<!-- make object of student -->
 	<bean class="com.spring.jdbc.entites.Student" name="student1">
-		<property name="id" value="9" />
-		<property name="naem" value="Sakshi" />
-		<property name="city" value="Nashik" />
+		<property name="id" value="6" />
+		<property name="naem" value="Pradhunya Shewale" />
+		<property name="city" value="@ Tehare Malegaon, Nashik" />
 
 	</bean>
 
