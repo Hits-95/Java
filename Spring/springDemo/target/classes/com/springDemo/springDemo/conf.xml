@@ -21,12 +21,14 @@
 			<value> At Dabli</value>
 		</property>
 	</bean>
+	
 	<!-- type 2 -->
 	<bean class="com.springDemo.springDemo.Student" name="Student2">
 		<property name="rollno" value="02" />
 		<property name="name" value="Nikita " />
 		<property name="addr" value="Pachora" />
 	</bean>
+	
 	<!-- type 3 -->
 	<bean class="com.springDemo.springDemo.Student" name="Student3" p:rollno="03" p:name="Pradhunya" p:addr="Tehare"/>
 

@@ -4,6 +4,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Component;
@@ -11,16 +12,18 @@ import org.springframework.stereotype.Component;
 import com.spring.jdbc.entites.Student;
 
 
-
+@Component("studentDao")
 public class StudentDaoImpl implements StudentDao {
 
+	@Autowired //set value here or in setJdbcTemplate() method
 	private JdbcTemplate jdbcTemplate;
 	private String query;
 
 	public JdbcTemplate getJdbcTemplate() {
 		return jdbcTemplate;
 	}
-
+	
+	@Autowired
 	public void setJdbcTemplate(JdbcTemplate jdbcTemplate) {
 		this.jdbcTemplate = jdbcTemplate;
 	}
@@ -47,7 +50,7 @@ public class StudentDaoImpl implements StudentDao {
 		return this.jdbcTemplate.update(query, studentId);
 	}
 
-	// select oprations
+	// select oprationsc
 	// get single student data
 	public Student getStudent(int studentId) {
 

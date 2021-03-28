@@ -19,6 +19,4 @@
 	<!-- auto wire on object byName, byType, byConstructer -->
 	<bean class="com.springDemo.auto.wire.Employee" name="emp"
 		autowire="byName" />
-		
-		
 </beans>

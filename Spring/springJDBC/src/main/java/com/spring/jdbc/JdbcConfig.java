@@ -13,7 +13,7 @@ import com.spring.jdbc.dao.StudentDaoImpl;
 import com.spring.jdbc.entites.Student;
 
 @Configuration
-//@ComponentScan(basePackages = "com.spring.jdbc.dao")
+@ComponentScan(basePackages = "com.spring.jdbc.dao") //using autowire do not neet to write methode
 public class JdbcConfig {
 
 	// make connection with database
@@ -36,13 +36,12 @@ public class JdbcConfig {
 	}
 
 	// get connection for studentDao class
-	@Bean(name = { "studentDao" })
-	public StudentDao getStudentDao() {
-
-		StudentDaoImpl studentDao = new StudentDaoImpl();
-		studentDao.setJdbcTemplate(getTemplate());
-		return studentDao;
-	}
+	/*
+	 * @Bean(name = { "studentDao" }) public StudentDao getStudentDao() {
+	 * 
+	 * StudentDaoImpl studentDao = new StudentDaoImpl();
+	 * studentDao.setJdbcTemplate(getTemplate()); return studentDao; }
+	 */
 
 	// make onject of student for send data;
 	@Bean("student1")
