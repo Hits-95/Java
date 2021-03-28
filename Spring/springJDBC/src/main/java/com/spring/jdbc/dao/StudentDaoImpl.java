@@ -32,4 +32,11 @@ public class StudentDaoImpl implements StudentDao {
 		return this.jdbcTemplate.update(query, student.getNaem(), student.getCity(), student.getId());
 	}
 
+	//delete opration...
+	public int delete(int studentId) {
+		
+		query = "DELETE FROM student WHERE id = ?";
+		return this.jdbcTemplate.update(query, studentId);
+	}
+
 }

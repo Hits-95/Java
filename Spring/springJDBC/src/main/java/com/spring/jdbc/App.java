@@ -9,7 +9,6 @@ import com.spring.jdbc.entites.Student;
 public class App {
 
 	public static void main(String[] args) {
-		System.out.println("Hello World!");
 
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/spring/jdbc/data_confg.xml");
 		
@@ -23,14 +22,18 @@ public class App {
 		//int result = studentDao.insert(student);
 		
 		//update Student
-		Student student = new Student();
-		student.setId(2);
-		student.setNaem("Yogita Bhagwan Ahire");
-		student.setCity("At dabli post kashti");
+		/*
+		 * Student student = new Student(); student.setId(2);
+		 * student.setNaem("Yogita Bhagwan Ahire");
+		 * student.setCity("At dabli post kashti");
+		 * 
+		 * //fire int update = studentDao.update(student);
+		 * System.out.println("No of record update : " + update);
+		 */
 		
-		//fire 
-		int update = studentDao.update(student);
-		System.out.println("No of record update : " + update);
+		//Delete Student
+		int delete = studentDao.delete(6);
+		System.out.println("No of record deleted : " + delete);
 
 	}
 }
