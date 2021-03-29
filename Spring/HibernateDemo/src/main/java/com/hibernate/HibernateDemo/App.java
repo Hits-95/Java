@@ -1,5 +1,7 @@
 package com.hibernate.HibernateDemo;
 
+import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.Date;
 
 import org.hibernate.Session;
@@ -8,7 +10,7 @@ import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
 public class App {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		System.out.println("Hello World!");
 		
 		SessionFactory factory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
@@ -24,7 +26,13 @@ public class App {
 		address.setOpen(false);
 		address.setAddedDate(new Date());
 		address.setBill(12313.12);
-		//address
+		
+		//Reading File
+		FileInputStream fis = new FileInputStream("src/main/java/iron.jpeg"); 
+		byte[] data = new byte[fis.available()];
+		fis.read(data);
+		address.setImage(data);
+		
 		
 		//Session session = factory.getCurrentSession();
 		Session session = factory.openSession();
