@@ -17,6 +17,7 @@ public class StudentDaoImpl implements StudentDao {
 
 	@Autowired //set value here or in setJdbcTemplate() method
 	private JdbcTemplate jdbcTemplate;
+	
 	private String query;
 
 	public JdbcTemplate getJdbcTemplate() {

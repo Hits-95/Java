@@ -14,10 +14,10 @@ public class App {
 	public static void main(String[] args) {
 
 		// using XML
-		ApplicationContext context = new ClassPathXmlApplicationContext("com/spring/jdbc/data_confg.xml");
-
 		// ApplicationContext context = new
-		// AnnotationConfigApplicationContext(JdbcConfig.class);
+		// ClassPathXmlApplicationContext("com/spring/jdbc/data_confg.xml");
+
+		ApplicationContext context = new AnnotationConfigApplicationContext(JdbcConfig.class);
 		// get query fire object
 		StudentDao studentDao = context.getBean("studentDao", StudentDao.class);
 
