@@ -1,5 +1,6 @@
 package com.hibernate.HibernateDemo;
 
+import java.util.Arrays;
 import java.util.Date;
 
 import javax.persistence.Column;
@@ -113,5 +114,12 @@ public class Address {
 	public void setImage(byte[] image) {
 		this.image = image;
 	}
+
+	@Override
+	public String toString() {
+		return "Address [addressId=" + addressId + ", street=" + street + ", city=" + city + ", isOpen=" + isOpen
+				+ ", bill=" + bill + ", addedDate=" + addedDate  + "]";
+	}
+	
 
 }
