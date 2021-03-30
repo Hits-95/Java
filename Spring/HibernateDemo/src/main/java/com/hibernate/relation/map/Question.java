@@ -1,9 +1,12 @@
 package com.hibernate.relation.map;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 
 @Entity
@@ -14,21 +17,27 @@ public class Question {
 	private int questionId;
 	private String question;
 
-	@OneToOne
-	@JoinColumn(name = "ans_id")
-	private Answer answer;
+	//one to one relationship 
+	/*
+	 * @OneToOne
+	 * 
+	 * @JoinColumn(name = "ans_id") 
+	 * private Answer answer;
+	 */
+	
+	//one to many relationship
+	//que 1 -> ans many
+	//@OneToMany //its create new table for primary and forene keys for avoid this use down method
+	@OneToMany(mappedBy = "question")
+	private List<Answer> answers;
+	
 
 	public Question() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
 
-	public Question(int questionId, String question, Answer answer) {
-		super();
-		this.questionId = questionId;
-		this.question = question;
-		this.answer = answer;
-	}
+	
 
 	public int getQuestionId() {
 		return questionId;
@@ -46,17 +55,18 @@ public class Question {
 		this.question = question;
 	}
 
-	public Answer getAnswer() {
-		return answer;
+	/*
+	 * public Answer getAnswer() { return answer; }
+	 * 
+	 * public void setAnswer(Answer answer) { this.answer = answer; }
+	 */
+
+	public List<Answer> getAnswers() {
+		return answers;
 	}
 
-	public void setAnswer(Answer answer) {
-		this.answer = answer;
-	}
-
-	@Override
-	public String toString() {
-		return "Question [questionId=" + questionId + ", question=" + question + ", answer=" + answer + "]";
+	public void setAnswers(List<Answer> answers) {
+		this.answers = answers;
 	}
 	
 

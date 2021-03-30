@@ -4,7 +4,9 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
+
 
 @Entity
 public class Answer {
@@ -14,10 +16,19 @@ public class Answer {
 	private int answerId;
 	private String answer;
 
-	@OneToOne(mappedBy = "answer") //create colm in quetion table only
-	//@JoinColumn(name = "que_id")
+	/*
+	 * @OneToOne(mappedBy = "answer") //create colm in quetion table only
+	 * //@JoinColumn(name = "que_id") 
+	 * private Question question;
+	 */
+	
+	//many ans -> 1 Que
+	@ManyToOne
+	@JoinColumn(name = "question_id")
 	private Question question;
-
+	
+	
+	
 	public int getAnswerId() {
 		return answerId;
 	}
