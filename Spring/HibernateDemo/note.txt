@@ -7,7 +7,9 @@
 - @Transient : if we want city entity coln data shoun'nt insert in database that time we will use it on this entity.
 - @Temporal : use to make date in specific formate
 - @Lob : large object data . eg blob
+- @Embeddable : it use for embed object entityes in declare class table 
+				eg. in Student cls -> Address addr there means it will add all Entitys of Address in Student class table 
 - @OneToOne : 
 - @OneToMany : 
 - @ManyToOne : 
-- @JoinColumn : 
+- @JoinColumn : to change the name of foren key colm in existing table

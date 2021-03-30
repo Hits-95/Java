@@ -11,12 +11,11 @@ import org.hibernate.cfg.Configuration;
 
 public class App {
 	public static void main(String[] args) throws IOException {
-		System.out.println("Hello World!");
 		
 		SessionFactory factory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
 		
 		//creating student
-		Student student = new Student(2, "Prashunya Shewale", "@Tehare, Malegaon, Nashi");
+		Student student = new Student(1, "Hitesh Ahire", "@Dabli, Malegaon, Nashi");
 		System.out.println(student);
 		
 		//creating object of Address
