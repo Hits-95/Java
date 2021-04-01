@@ -10,9 +10,10 @@
 		<property name="connection.username"> Hitesh </property>
 		<property name="connection.password"> online </property>
 		<property name="dialect">org.hibernate.dialect.MySQL5Dialect </property>
-		<!-- <property name="hbm2ddl.auto"> update </property> -->
-		<property name="hbm2ddl.auto"> create </property>
+		<property name="hbm2ddl.auto"> update </property>
+		<!-- <property name="hbm2ddl.auto"> create </property> -->
 		<property name="show_sql"> true </property>
+		<property name="format_sql"> true </property>
 		<mapping class="com.hibernate.HibernateDemo.Student" />
 		<mapping class="com.hibernate.HibernateDemo.Address" />
 		<mapping class="com.hibernate.relation.map.Question" />
