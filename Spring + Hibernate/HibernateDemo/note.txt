@@ -18,11 +18,13 @@
 
 Hibernate object state
 			 - create obj add assinde values 
-			 			-call save() 
-- Transient 	false 	true
+			 			-call save(),data go into database
+			 			       -close session  
+			 			       			- delete opration
+- Transient 	false 	true	false		false
 
-- Persistent			true 
+- Persistent			true	false		false
 
-- Detached
+- Detached						true		false
 
-- Remove 
+- Remove 									trues go to persistent
